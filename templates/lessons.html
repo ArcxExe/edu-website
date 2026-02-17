@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{.Title}}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>{{.Title}}</h1>
+        <div class="content">{{.Content}}</div>
+        <pre><code class="python">print("Hello, World!")</code></pre>
+        <button onclick="checkCode()">Проверить задание</button>
+    </div>
+    <script src="/static/js/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
